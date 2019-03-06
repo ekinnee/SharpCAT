@@ -1,5 +1,5 @@
 # SharpCAT
-C#, .NET Standard based CAT control llibrary.
+C#, .NET Standard based CAT control library.
 
 I am targeting .Net Standard so that the assembly may be used with .Net Core or the .Net framework.
 
