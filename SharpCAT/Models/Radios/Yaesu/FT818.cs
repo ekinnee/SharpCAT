@@ -1,4 +1,4 @@
-namespace SharpCAT.Yaesu
+namespace SharpCAT.Models.Radios.Yaesu
 {
     internal class FT818
     {
