@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SharpCAT.Models.Radios.Icom
 {
-    class ID4100a
+    class ID4100a : Radio
     {
     }
 }

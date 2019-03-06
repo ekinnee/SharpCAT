@@ -1,9 +1,7 @@
 namespace SharpCAT.Models.Radios.Yaesu
 {
-    internal class FT818
-    {
-        private readonly string CmdPad = "00000000";
-
+    internal class FT818 : Radio
+    {     
         public struct Lock
         {
             public static readonly string ON = "00";
