@@ -17,4 +17,9 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\Radios\Icom\" />
+    <Folder Include="Models\Radios\Kenwood\" />
+  </ItemGroup>
+
 </Project>
