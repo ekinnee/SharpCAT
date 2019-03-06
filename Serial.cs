@@ -53,7 +53,6 @@ namespace SharpCAT
 
             _serialPort.DataReceived += new SerialDataReceivedEventHandler(SerialDataReceived);
             _serialPort.ErrorReceived += new SerialErrorReceivedEventHandler(SerialErrorReceived);
-
         }
 
         private void SerialErrorReceived(object sender, SerialErrorReceivedEventArgs e)
