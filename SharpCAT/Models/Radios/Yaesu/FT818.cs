@@ -32,6 +32,16 @@ namespace SharpCAT.Models.Radios.Yaesu
             public static readonly string OFF = "8F";
         }
 
+        public string VFOToggle = "81";
+
+        public struct ToneMode
+        {
+            public static readonly string DCS = "0A";
+            public static readonly string CTCSS = "2A";
+            public static readonly string ENCODER = "4A";
+            public static readonly string OFF = "8A";
+        }
+
         public struct OpModes
         {
             public static readonly string LSB = "00";
@@ -106,14 +116,35 @@ namespace SharpCAT.Models.Radios.Yaesu
 
         public void SetFreq(double freq)
         {
+            char[] freqChars = freq.ToString().ToCharArray();
+            // 01 42 34 56 = 14.23456MHz
+            switch (freqChars.Length)
+            {
+                case 1: break;
+                case 2: break;
+                case 3: break;
+                case 4: break;
+                case 5: break;
+                case 6: break;
+                case 7: break;
+                case 8: break;
+                default: break;
+            }
         }
 
-        public void SetOpMode(string opmode)
+        public void SetOpMode(OpModes opmode)
         {
         }
 
-        public void SetVFO()
+        public string SwitchVFO()
         {
+            string _cmd = CmdPad + VFOToggle;
+            return _cmd;
+        }
+
+        public void SetToneMode(ToneMode mode)
+        {
+
         }
 
         public void GetRXStatus()
