@@ -9,7 +9,7 @@ namespace SharpCAT
         private SerialPort _serialPort;
 
         public string[] PortNames { get => SerialPort.GetPortNames(); }
-        public static int[] BaudRates { get; } = new int[] { 1200, 4800, 9600, 19200, 38400 };
+        public static int[] BaudRates { get; } = new int[] { 1200, 2400, 4800, 9600, 19200, 38400 };
 
         public static int[] DataBits { get; } = new int[] { 7, 8 };
 
@@ -38,6 +38,8 @@ namespace SharpCAT
             XOnXOff = System.IO.Ports.Handshake.XOnXOff
         }
 
+        private readonly string CmdPad = "00000000";
+
         public Serial(string portname, int baudrate, Parity parity, StopBits bits, Handshake handshake)
         {
             _serialPort = new SerialPort
@@ -65,6 +67,11 @@ namespace SharpCAT
 
         }
 
+        public void ProbeSerialPort(SerialPort port)
+        {
+
+        }
+
         public void Read()
         {
 
@@ -76,14 +83,5 @@ namespace SharpCAT
             catch (TimeoutException) { }
         }
 
-        public void GetRXStatus()
-        {
-
-        }
-
-        public void GetFreqAndMode()
-        {
-
-        }
     }
 }

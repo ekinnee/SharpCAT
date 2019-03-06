@@ -2,66 +2,108 @@ namespace SharpCAT.Yaesu
 {
     internal class FT818
     {
-        public struct LOCK
+        private readonly string CmdPad = "00000000";
+
+        public struct Lock
         {
-            private static readonly string ON = "00";
-            private static readonly string OFF = "80";
+            public static readonly string ON = "00";
+            public static readonly string OFF = "80";
         }
 
-        public struct PTT
+        public struct Ptt
         {
-            private static readonly string ON = "08";
-            private static readonly string OFF = "88";
+            public static readonly string ON = "08";
+            public static readonly string OFF = "88";
         }
 
-        public struct CLAR
+        public struct Clar
         {
-            private static readonly string ON = "05";
-            private static readonly string OFF = "85";
+            public static readonly string ON = "05";
+            public static readonly string OFF = "85";
         }
 
-        public struct SPLIT
+        public struct Split
         {
-            private static readonly string ON = "02";
-            private static readonly string OFF = "82";
+            public static readonly string ON = "02";
+            public static readonly string OFF = "82";
         }
 
-        public struct POWER
+        public struct Power
         {
-            private static readonly string ON = "0F";
-            private static readonly string OFF = "8F";
+            public static readonly string ON = "0F";
+            public static readonly string OFF = "8F";
         }
 
         public struct OpModes
         {
-            private static readonly string LSB = "00";
-            private static readonly string USB = "01";
-            private static readonly string CW = "02";
-            private static readonly string CWR = "03";
-            private static readonly string AM = "04";
-            private static readonly string FM = "08";
-            private static readonly string DIG = "0A";
-            private static readonly string PKT = "0C";
+            public static readonly string LSB = "00";
+            public static readonly string USB = "01";
+            public static readonly string CW = "02";
+            public static readonly string CWR = "03";
+            public static readonly string AM = "04";
+            public static readonly string FM = "08";
+            public static readonly string DIG = "0A";
+            public static readonly string PKT = "0C";
         }
 
-        public void SetLock()
+        public string LockOn()
         {
+            string _cmd = CmdPad + Lock.ON;
+            return _cmd;
         }
 
-        public void SetPTT()
+        public string LockOff()
         {
+            string _cmd = CmdPad + Lock.OFF;
+            return _cmd;
         }
 
-        public void SetCLAR()
+        public string PttOn()
         {
+            string _cmd = CmdPad + Ptt.ON;
+            return _cmd;
         }
 
-        public void SetSPLIT()
+        public string PttOff()
         {
+            string _cmd = CmdPad + Ptt.OFF;
+            return _cmd;
         }
 
-        public void SetPOWER()
+        public string ClarOn()
         {
+            string _cmd = CmdPad + Clar.ON;
+            return _cmd;
+        }
+
+        public string ClarOff()
+        {
+            string _cmd = CmdPad + Clar.OFF;
+            return _cmd;
+        }
+
+        public string SplitOn()
+        {
+            string _cmd = CmdPad + Split.ON;
+            return _cmd;
+        }
+
+        public string SplitOff()
+        {
+            string _cmd = CmdPad + Split.OFF;
+            return _cmd;
+        }
+
+        public string PowerOn()
+        {
+            string _cmd = CmdPad + Power.ON;
+            return _cmd;
+        }
+
+        public string PowerOff()
+        {
+            string _cmd = CmdPad + Power.OFF;
+            return _cmd;
         }
 
         public void SetFreq(double freq)
@@ -74,6 +116,21 @@ namespace SharpCAT.Yaesu
 
         public void SetVFO()
         {
+        }
+
+        public void GetRXStatus()
+        {
+
+        }
+
+        public void GetTXStatus()
+        {
+
+        }
+
+        public void GetFreqAndModeStatus()
+        {
+
         }
     }
 }
