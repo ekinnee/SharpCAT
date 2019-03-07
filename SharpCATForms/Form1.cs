@@ -11,7 +11,7 @@ namespace SharpCATForms
             
             InitializeComponent();
 
-            ComPorts.DataSource = sharpCAT.PortNames;
+            ComPortListBox.DataSource = sharpCAT.PortNames;
         }
     }
 }
