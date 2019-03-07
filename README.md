@@ -5,7 +5,10 @@ I am targeting .Net Standard so that the assembly may be used with .Net Core or 
 
 I'm starting with the FT818, I then plan on adding my ID-4100a, and TH-D74A.
 
-If you wish to help let me know, or create a pull request.
+If you wish to help let me know, or create a pull request. I'm not a pro developer, just a hack
+that normally builds small tools for himself.
+
+Ideas on how to do this are appreciated!
 
 # Why?
 Yes, there's Hamlib, and yes there's HamLibSharp.
