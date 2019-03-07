@@ -22,22 +22,22 @@ That being said, there's also not a pure .Net (C#) CAT control lib out there tha
 The project is in an early very phase.
 1. Settle on how the radios and commands are defined.
 
-  JSON?
+    JSON?
   
-  Or just use a .cs file (current)?
+    Or just use a .cs file (current)?
   
 2. Need to support opening / using an arbitrary number of radios.
 
-  RigControl can do 2.
+    RigControl can do 2.
   
 3. Fully support asynchronous operations.
 
-  There's some handy events exposed by .net for data received on the Serial Port.
+    There's some handy events exposed by .net for data received on the Serial Port.
   
 4. Add support for remote sharing of serial ports.
 
 5. Implemtment the flrig control protocol.
   
-  Use this in place of flrig if desired.
+    Use this in place of flrig if desired.
 
 6. Implement the ability to run as a service.
