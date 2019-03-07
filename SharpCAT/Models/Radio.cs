@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SharpCAT.Models
+namespace SharpCATLib.Models
 {
     //Base Radio Model
     class Radio

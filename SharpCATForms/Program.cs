@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using SharpCATLib;
 
 namespace SharpCATForms
 {
@@ -10,11 +11,12 @@ namespace SharpCATForms
         /// </summary>
         [STAThread]
         private static void Main()
-        {
-            //SharpCAT sharpCAT = new SharpCAT();
+        {          
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
+            
         }
     }
 }

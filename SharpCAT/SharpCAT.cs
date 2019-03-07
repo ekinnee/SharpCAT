@@ -1,4 +1,6 @@
-﻿namespace SharpCAT
+﻿using System.IO.Ports;
+
+namespace SharpCATLib
 {
     public class SharpCAT
     {
@@ -14,5 +16,14 @@
             365, 371, 411, 412, 413, 423, 431, 432, 445, 446, 452, 454, 455, 462, 464, 465, 466,
             503, 506, 516, 523, 526, 532, 546, 565, 606, 612, 624, 627, 631, 632, 654, 662, 664,
             703, 712, 723, 731, 732, 734, 743, 754 };
+
+        public string[] PortNames { get => SerialPort.GetPortNames(); }
+
+        public static int[] BaudRates { get; } = new int[] { 1200, 2400, 4800, 9600, 19200, 38400 };
+
+        public static int[] DataBits { get; } = new int[] { 7, 8 };
+
+        private readonly string CmdPad = "00000000";
+
     }
 }

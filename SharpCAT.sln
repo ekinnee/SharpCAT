@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpCATForms", "SharpCATForms\SharpCATForms.csproj", "{3483B368-338A-4BE3-AEB9-460E374B2C99}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpCAT", "SharpCAT\SharpCAT.csproj", "{DAD3E7BE-905A-4768-A695-0BCF96171E35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpCATLib", "SharpCAT\SharpCATLib.csproj", "{DAD3E7BE-905A-4768-A695-0BCF96171E35}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

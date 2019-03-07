@@ -1,4 +1,5 @@
 ﻿using System.Windows.Forms;
+using SharpCATLib;
 
 namespace SharpCATForms
 {
@@ -6,7 +7,11 @@ namespace SharpCATForms
     {
         public Form1()
         {
+            SharpCAT sharpCAT = new SharpCAT();
+            
             InitializeComponent();
+
+            ComPorts.DataSource = sharpCAT.PortNames;
         }
     }
 }
