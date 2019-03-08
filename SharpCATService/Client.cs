@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SharpCATService
+﻿namespace SharpCATService
 {
-    class Client
+    internal class Client
     {
     }
 }

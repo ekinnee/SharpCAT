@@ -1,14 +1,14 @@
-using SharpCATLib;
+using SharpCATLib.Models;
 
-namespace SharpCATLib.Models.Radios.Yaesu
+namespace SharpCATLib.Radios.Yaesu
 {
     public class FT818 : CATRadio
     {
         public string RadioMfg => "Yaesu";
         public string RadioModel => "FT-818";
 
-        public string CmdPad => "00000000";  
-        
+        public string CmdPad => "00000000";
+
         public class Lock
         {
             public static readonly string ON = "00";
@@ -61,87 +61,87 @@ namespace SharpCATLib.Models.Radios.Yaesu
             public static readonly string PKT = "0C";
         }
 
-        string LockOn()
-        {
-            return ""; 
-        }
-
-        string LockOff()
+        private string LockOn()
         {
             return "";
         }
 
-        string PttOn()
+        private string LockOff()
         {
             return "";
         }
 
-        string PttOff()
+        private string PttOn()
         {
             return "";
         }
 
-        string ClarOn()
+        private string PttOff()
         {
             return "";
         }
 
-        string ClarOff()
+        private string ClarOn()
         {
             return "";
         }
 
-        string SplitOn()
+        private string ClarOff()
         {
             return "";
         }
 
-        string SplitOff()
+        private string SplitOn()
         {
             return "";
         }
 
-        string PowerOn()
+        private string SplitOff()
         {
             return "";
         }
 
-        string PowerOff()
+        private string PowerOn()
         {
             return "";
         }
 
-        string SetFreq(double freq)
+        private string PowerOff()
         {
             return "";
         }
 
-        string SetOpMode(OpModes opmode)
+        private string SetFreq(double freq)
         {
             return "";
         }
 
-        string SwitchVFO()
+        private string SetOpMode(OpModes opmode)
         {
             return "";
         }
 
-        string SetToneMode(ToneMode mode)
+        private string SwitchVFO()
         {
             return "";
         }
 
-        string GetRXStatus()
+        private string SetToneMode(ToneMode mode)
         {
             return "";
         }
 
-        string GetTXStatus()
+        private string GetRXStatus()
         {
             return "";
         }
 
-        string GetFreqAndModeStatus()
+        private string GetTXStatus()
+        {
+            return "";
+        }
+
+        private string GetFreqAndModeStatus()
         {
             return "";
         }

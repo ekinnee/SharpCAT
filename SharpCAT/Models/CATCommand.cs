@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SharpCATLib
+﻿namespace SharpCATLib.Models
 {
-    class CATCommand
+    internal class CATCommand
     {
         public string P1 { get; set; }
         public string P2 { get; set; }

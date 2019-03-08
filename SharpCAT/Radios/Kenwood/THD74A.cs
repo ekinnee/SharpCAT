@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SharpCATLib.Models.Radios.Kenwood
+﻿namespace SharpCATLib.Radios.Kenwood
 {
-    class THD74A
+    internal class THD74A
     {
-
     }
 }

@@ -3,19 +3,19 @@
     //Base Radio Model
     public partial class CATRadio
     {
-        string RadioMfg { get; }
-        string RadioModel { get; }
+        private string RadioMfg { get; }
+        private string RadioModel { get; }
 
-        string CmdPad { get; }
+        private string CmdPad { get; } = "00000000";
 
-        string VFOToggle { get; }
-        Lock Lock { get; }
-        Ptt Ptt { get; }
-        Clar Clar { get; }
-        Split Split { get; }
-        Power Power { get; }
-        ToneMode ToneMode { get; }
-        OpModes OpModes { get; }
+        private string VFOToggle { get; }
+        private Lock Lock { get; }
+        private Ptt Ptt { get; }
+        private Clar Clar { get; }
+        private Split Split { get; }
+        private Power Power { get; }
+        private ToneMode ToneMode { get; }
+        private OpModes OpModes { get; }
 
         partial void LockOn();
 
@@ -101,5 +101,4 @@
         public static readonly string DIG;
         public static readonly string PKT;
     }
-
 }

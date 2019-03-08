@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SharpCATLib.Models
+﻿namespace SharpCATLib.Models
 {
-    class CIVCommand
+    internal class CIVCommand
     {
-        string CmdToRadio = "FE FE 9A E0 Cn Sc Data area FD";
-        string DataFromRadio = "FE FE E0 9A Cn Sc Data area FD";
-        string OKFromRadio { get; set; }
-        string NGFromRadio { get; set; }
+        private string CmdToRadio = "FE FE 9A E0 Cn Sc Data area FD";
+        private string DataFromRadio = "FE FE E0 9A Cn Sc Data area FD";
+        private string OKFromRadio { get; set; }
+        private string NGFromRadio { get; set; }
     }
 }

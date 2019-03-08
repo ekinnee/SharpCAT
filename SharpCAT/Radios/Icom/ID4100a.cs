@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using SharpCATLib.Models;
 
-namespace SharpCATLib.Models.Radios.Icom
+namespace SharpCATLib.Radios.Icom
 {
-    class ID4100a : CIVRadio
+    internal class ID4100a : CIVRadio
     {
-        string OKFromRadio = "FEFEE09AFBFD";
-        string NGFromRadio = "FEFEE09AFAFD";
+        private string OKFromRadio = "FEFEE09AFBFD";
+        private string NGFromRadio = "FEFEE09AFAFD";
     }
 }

@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SharpCATLib.Models.Radios.Icom
+﻿namespace SharpCATLib.Radios.Icom
 {
-    class ID880H
+    internal class ID880H
     {
-
     }
 }

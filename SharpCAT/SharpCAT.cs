@@ -1,30 +1,17 @@
-﻿using SharpCATLib;
-using System;
+﻿using System.Collections.Generic;
 using System.IO.Ports;
 
 namespace SharpCATLib
 {
     public class SharpCAT
     {
-        delegate string OnPortsSelected(string[] portnames);
+        private delegate string OnPortsSelected(string[] portnames);
 
-        event OnPortsSelected PortsSelected;
+        private static event OnPortsSelected PortsSelected;
 
-        public SharpCAT()
-        {
-            PortsSelected += new OnPortsSelected(ConnectPorts);
-        }
+        public SharpCAT() => SharpCAT.PortsSelected += new OnPortsSelected(ConnectPorts);
 
-        private string[] _portstouse;
-        public string[] PortsToUse
-        {
-            get => _portstouse;
-            set
-            {
-                _portstouse = value;
-                PortsSelected.Invoke(_portstouse);
-            }
-        }
+        public string[] PortsToUse { get; set; }
 
         public double[] CTCSSTones = { 67.0, 69.3, 71.9, 74.4, 77.0, 79.7, 82.5, 85.4, 88.5,
             91.5, 94.8, 97.4, 100.0, 103.5, 107.2, 110.9, 114.8, 118.8, 123, 127.3, 131.8,
@@ -41,18 +28,21 @@ namespace SharpCATLib
 
         public string[] PortNames { get => SerialPort.GetPortNames(); }
 
-        public static int[] BaudRates { get; } = new int[] { 1200, 2400, 4800, 9600, 19200, 38400 };
+        public enum BaudRates : int { TwelveHundred = 1200, TwentyFourHundred = 2400, FourtyEightHUndred = 4800, NinteySixHundred = 9600, NineteenTwo = 19200, ThirtyEightFour = 38400 };
 
         public static int[] DataBits { get; } = new int[] { 7, 8 };
 
         public static string[] RadioTypes { get; } = new string[] { "CAT", "CIV" };
 
-        private readonly string CATCmdPad = "00000000";
-
         private string ConnectPorts(string[] portnames)
         {
+            List<Serial> ports = new List<Serial>();
+
+            foreach (string port in portnames)
+            {
+                ports.Add(new Serial("COM11", BaudRates.ThirtyEightFour, Parity.None, StopBits.Two, Handshake.None));
+            }
             return "";
         }
-
     }
 }

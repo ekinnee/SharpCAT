@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SharpCATLib.Models
+﻿namespace SharpCATLib.Models
 {
-    class CIVRadio
+    internal class CIVRadio
     {
     }
 }

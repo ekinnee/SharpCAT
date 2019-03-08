@@ -7,14 +7,15 @@ namespace SharpCATLib
     {
         private SerialPort _serialPort;
 
-        public Serial(string portname, int baudrate, Parity parity, StopBits bits, Handshake handshake)
+        //Init
+        public Serial(string portname, SharpCAT.BaudRates baudrate, Parity parity, StopBits bits, Handshake handshake)
         {
             _serialPort = new SerialPort
             {
                 ReadTimeout = 500,
                 WriteTimeout = 500,
                 PortName = portname,
-                BaudRate = baudrate,
+                BaudRate = (int)baudrate,
                 Parity = parity,
                 StopBits = bits,
                 Handshake = handshake

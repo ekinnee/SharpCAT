@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SharpCATLib
+﻿namespace SharpCATLib
 {
-    class SerialServer
+    internal class SerialServer
     {
     }
 }
