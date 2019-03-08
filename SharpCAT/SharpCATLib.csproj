@@ -9,6 +9,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Radios\Icom\ID4100a.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Radios\Icom\ID880H.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Radios\Kenwood\THD74A.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Radios\Yaesu\FT818.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="SharpCAT WPF\App.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>

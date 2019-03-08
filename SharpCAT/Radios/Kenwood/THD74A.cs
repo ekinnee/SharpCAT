@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SharpCATLib.Models.Radios.Icom
+namespace SharpCATLib.Models.Radios.Kenwood
 {
-    class ID4100a : Radio
+    class THD74A
     {
+
     }
 }

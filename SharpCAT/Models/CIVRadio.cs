@@ -4,9 +4,7 @@ using System.Text;
 
 namespace SharpCATLib.Models
 {
-    //Base Radio Model
-    class Radio
+    class CIVRadio
     {
-        public readonly string CmdPad = "00000000";
     }
 }
