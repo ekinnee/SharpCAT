@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO.Ports;
 
 namespace SharpCATLib
@@ -40,6 +41,7 @@ namespace SharpCATLib
 
             foreach (string port in portnames)
             {
+                //Testing
                 ports.Add(new Serial("COM11", BaudRates.ThirtyEightFour, Parity.None, StopBits.Two, Handshake.None));
             }
             return "";
