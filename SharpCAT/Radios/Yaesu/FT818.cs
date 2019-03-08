@@ -6,8 +6,8 @@ namespace SharpCATLib.Models.Radios.Yaesu
     {
         public string RadioMfg => "Yaesu";
         public string RadioModel => "FT-818";
-        public string CmdPad => "00000000";
-      
+
+        public string CmdPad => "00000000";  
         
         public class Lock
         {

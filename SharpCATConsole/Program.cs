@@ -12,6 +12,7 @@ namespace SharpCATConsole
         static void Main(string[] args)
         {
             SharpCAT sharpCAT = new SharpCAT();
+            
             Console.WriteLine("Ports found: ");
             foreach (var port in sharpCAT.PortNames)
             {
@@ -19,6 +20,11 @@ namespace SharpCATConsole
             }
             
             Console.ReadKey();
+        }
+
+        private static string SharpCAT_PortsSelected(string[] portnames)
+        {
+            throw new NotImplementedException();
         }
     }
 }

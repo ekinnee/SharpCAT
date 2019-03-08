@@ -52,7 +52,7 @@
         partial void GetFreqAndModeStatus();
     }
 
-    public class Lock
+    public partial class Lock
     {
         public static readonly string ON;
         public static readonly string OFF;

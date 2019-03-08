@@ -1,24 +1,29 @@
-﻿using System;
+﻿using SharpCATLib;
+using System;
 using System.IO.Ports;
 
 namespace SharpCATLib
 {
     public class SharpCAT
     {
+        delegate string OnPortsSelected(string[] portnames);
+
+        event OnPortsSelected PortsSelected;
+
         public SharpCAT()
         {
-            PortsSelected += new EventHandler(OnPortsSelected);
+            PortsSelected += new OnPortsSelected(ConnectPorts);
         }
 
-        public event EventHandler PortsSelected;
-        public void OnSetPortsToUse()
+        private string[] _portstouse;
+        public string[] PortsToUse
         {
-            PortsSelected?.Invoke(this, EventArgs.Empty);
-        }
-
-        private void OnPortsSelected(object s, EventArgs e)
-        {
-            //Init and start the serial ports selected.
+            get => _portstouse;
+            set
+            {
+                _portstouse = value;
+                PortsSelected.Invoke(_portstouse);
+            }
         }
 
         public double[] CTCSSTones = { 67.0, 69.3, 71.9, 74.4, 77.0, 79.7, 82.5, 85.4, 88.5,
@@ -40,10 +45,14 @@ namespace SharpCATLib
 
         public static int[] DataBits { get; } = new int[] { 7, 8 };
 
-        private readonly string CmdPad = "00000000";
+        public static string[] RadioTypes { get; } = new string[] { "CAT", "CIV" };
 
-        private SerialPort[] PortsToUse;
+        private readonly string CATCmdPad = "00000000";
 
+        private string ConnectPorts(string[] portnames)
+        {
+            return "";
+        }
 
     }
 }

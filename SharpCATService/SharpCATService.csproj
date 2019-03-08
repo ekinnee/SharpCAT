@@ -58,5 +58,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SharpCAT\SharpCATLib.csproj">
+      <Project>{dad3e7be-905a-4768-a695-0bcf96171e35}</Project>
+      <Name>SharpCATLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
