@@ -23,6 +23,9 @@ That being said, there's also not a pure .Net (C#) CAT control lib out there tha
 
 # What needs done?
 The project is in an early very phase.
+
+.5. Implement an IRadio interface.
+
 1. Settle on how the radios and commands are defined.
 
     JSON?
@@ -44,3 +47,9 @@ The project is in an early very phase.
     Use this in place of flrig if desired.
 
 6. Implement the ability to run as a service.
+
+7. Implement CAT and CIV control.
+
+    This will come with the first Icom radio implemented I figure.
+    
+    I have an Icom 4100a and an 880H onhand.
