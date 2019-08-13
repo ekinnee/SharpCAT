@@ -46,10 +46,12 @@ The project is in an early very phase. The following is in no particular order, 
   
     Use this in place of flrig if desired.
 
-7. Implement the ability to run as a service.
+7. Maybe implement AGWPE?
 
-8. Implement CAT and CIV control.
+8. Implement the ability to run as a service.
+
+9. Implement CAT and CIV control.
 
     This will come with the first Icom radio implemented I figure.
     
-    I have an Icom 4100a and an 880H onhand.
+    I've switched radios, so I have a Yaesu FT991a, Baofeng BF-T1, WLN KD-C1, Baofeng UV-5x3, TH-D72a, FT-2DR and an D878UV.
