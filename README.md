@@ -1,3 +1,5 @@
+# This like many, are ideas. There may or may not be progress as inspiration and time allows.
+
 # SharpCAT
 C#, .NET Standard based CAT control library.
 
