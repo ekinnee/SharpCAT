@@ -1,6 +1,6 @@
 ﻿namespace SharpCATLib.Models
 {
-    internal class CIVRadio
+    internal class CIVRadio : IRadio
     {
     }
 }

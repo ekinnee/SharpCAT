@@ -1,7 +1,7 @@
 ﻿namespace SharpCATLib.Models
 {
     //Base Radio Model
-    public partial class CATRadio
+    public partial class CATRadio : IRadio
     {
         private string RadioMfg { get; }
         private string RadioModel { get; }

@@ -28,7 +28,7 @@ namespace SharpCATLib
 
         public string[] PortNames { get => SerialPort.GetPortNames(); }
 
-        public enum BaudRates : int { TwelveHundred = 1200, TwentyFourHundred = 2400, FourtyEightHUndred = 4800, NinteySixHundred = 9600, NineteenTwo = 19200, ThirtyEightFour = 38400 };
+        public enum BaudRates : int { Twelve = 1200, TwentyFour = 2400, FourtyEight = 4800, NinteySix = 9600, NineteenTwo = 19200, ThirtyEightFour = 38400 };
 
         public static int[] DataBits { get; } = new int[] { 7, 8 };
 
@@ -36,12 +36,12 @@ namespace SharpCATLib
 
         private string ConnectPorts(string[] portnames)
         {
-            List<Serial> ports = new List<Serial>();
+            List<SerialPort> ports = new List<SerialPort>();
 
             foreach (string port in portnames)
             {
                 //Testing
-                ports.Add(new Serial("COM11", BaudRates.ThirtyEightFour, Parity.None, StopBits.Two, Handshake.None));
+                ports.Add(new SerialPort(port, (int)BaudRates.ThirtyEightFour, Parity.None, (int)StopBits.Two, (int)Handshake.None));
             }
             return "";
         }
