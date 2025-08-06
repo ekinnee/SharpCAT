@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpCAT", "SharpCAT\SharpCAT.csproj", "{3EA807EF-B181-4C54-8502-0A2A3EACE984}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{43CFF66C-84E6-4EC2-AE4F-005FB80D74D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpCAT.Server", "Server\SharpCAT.Server\SharpCAT.Server.csproj", "{22E4F655-252E-42DB-ADD5-494BC825A97C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EA807EF-B181-4C54-8502-0A2A3EACE984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EA807EF-B181-4C54-8502-0A2A3EACE984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EA807EF-B181-4C54-8502-0A2A3EACE984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EA807EF-B181-4C54-8502-0A2A3EACE984}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22E4F655-252E-42DB-ADD5-494BC825A97C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22E4F655-252E-42DB-ADD5-494BC825A97C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22E4F655-252E-42DB-ADD5-494BC825A97C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22E4F655-252E-42DB-ADD5-494BC825A97C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{22E4F655-252E-42DB-ADD5-494BC825A97C} = {43CFF66C-84E6-4EC2-AE4F-005FB80D74D5}
+	EndGlobalSection
+EndGlobal
