@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4E2188E0-16ED-42CA-9BF8-E38C5E682404}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpCAT.Common", "src\SharpCAT.Common\SharpCAT.Common.csproj", "{28874A1C-98B0-43D6-BE83-6E3AD8B9F42F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpCAT.Server", "src\SharpCAT.Server\SharpCAT.Server.csproj", "{EF0F9B07-4F63-4057-ACE7-663BF43B88DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpCAT.Client", "src\SharpCAT.Client\SharpCAT.Client.csproj", "{3CA1501E-A86D-436A-9A18-8A3A2952098C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28874A1C-98B0-43D6-BE83-6E3AD8B9F42F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28874A1C-98B0-43D6-BE83-6E3AD8B9F42F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28874A1C-98B0-43D6-BE83-6E3AD8B9F42F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28874A1C-98B0-43D6-BE83-6E3AD8B9F42F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF0F9B07-4F63-4057-ACE7-663BF43B88DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF0F9B07-4F63-4057-ACE7-663BF43B88DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF0F9B07-4F63-4057-ACE7-663BF43B88DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF0F9B07-4F63-4057-ACE7-663BF43B88DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CA1501E-A86D-436A-9A18-8A3A2952098C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CA1501E-A86D-436A-9A18-8A3A2952098C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CA1501E-A86D-436A-9A18-8A3A2952098C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CA1501E-A86D-436A-9A18-8A3A2952098C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{28874A1C-98B0-43D6-BE83-6E3AD8B9F42F} = {4E2188E0-16ED-42CA-9BF8-E38C5E682404}
+		{EF0F9B07-4F63-4057-ACE7-663BF43B88DC} = {4E2188E0-16ED-42CA-9BF8-E38C5E682404}
+		{3CA1501E-A86D-436A-9A18-8A3A2952098C} = {4E2188E0-16ED-42CA-9BF8-E38C5E682404}
+	EndGlobalSection
+EndGlobal
