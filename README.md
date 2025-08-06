@@ -1,9 +1,30 @@
 # This like many, are ideas. There may or may not be progress as inspiration and time allows.
 
 # SharpCAT
-C#, .NET Standard based CAT control library.
+C#, .NET Standard based CAT control library with ASP.NET Core Web API server.
 
 I am targeting .Net Standard so that the assembly may be used with .Net Core or the .Net framework.
+
+## Components
+
+### SharpCAT Library
+The core .NET Standard 2.0 library for CAT (Computer Aided Transceiver) control.
+
+### SharpCAT Server
+A cross-platform ASP.NET Core Web API server that provides REST endpoints for CAT control operations. Located in `Server/SharpCAT.Server/`.
+
+**Key Features:**
+- REST API for serial port management and CAT commands
+- Cross-platform support (Windows, Linux, macOS)
+- Swagger/OpenAPI documentation
+- Built-in error handling and logging
+
+**Quick Start:**
+```bash
+cd Server/SharpCAT.Server
+dotnet run
+```
+Then visit `http://localhost:5188` for the Swagger UI.
 
 ## Development Setup
 
@@ -16,19 +37,30 @@ I am targeting .Net Standard so that the assembly may be used with .Net Core or 
 
 This project is configured for development in Visual Studio Code with the .NET CLI.
 
-**To build the project:**
+**To build the entire solution:**
 ```bash
-dotnet build SharpCAT/SharpCATLib.csproj
+dotnet build
+```
+
+**To build just the library:**
+```bash
+dotnet build SharpCAT/SharpCAT.csproj
+```
+
+**To build and run the Web API server:**
+```bash
+cd Server/SharpCAT.Server
+dotnet run
 ```
 
 **To clean the project:**
 ```bash
-dotnet clean SharpCAT/SharpCATLib.csproj
+dotnet clean
 ```
 
 **To restore packages:**
 ```bash
-dotnet restore SharpCAT/SharpCATLib.csproj
+dotnet restore
 ```
 
 **VS Code Tasks:**
