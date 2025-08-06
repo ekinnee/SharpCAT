@@ -5,6 +5,40 @@ C#, .NET Standard based CAT control library.
 
 I am targeting .Net Standard so that the assembly may be used with .Net Core or the .Net framework.
 
+## Development Setup
+
+### Prerequisites
+- [.NET 8.0 SDK](https://dotnet.microsoft.com/download) or later
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [C# Extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
+
+### Building and Running
+
+This project is configured for development in Visual Studio Code with the .NET CLI.
+
+**To build the project:**
+```bash
+dotnet build SharpCAT/SharpCATLib.csproj
+```
+
+**To clean the project:**
+```bash
+dotnet clean SharpCAT/SharpCATLib.csproj
+```
+
+**To restore packages:**
+```bash
+dotnet restore SharpCAT/SharpCATLib.csproj
+```
+
+**VS Code Tasks:**
+The repository includes pre-configured VS Code tasks (`Ctrl+Shift+P` → "Tasks: Run Task"):
+- **build** - Builds the project (default build task: `Ctrl+Shift+B`)
+- **clean** - Cleans build outputs
+- **restore** - Restores NuGet packages
+- **publish** - Publishes the library
+- **watch** - Watches for changes and rebuilds automatically
+
 I'm starting with the FT818, I then plan on adding my ID-4100a, and TH-D74A.
 
 If you wish to help let me know, or create a pull request. I'm not a pro developer, just a hack
