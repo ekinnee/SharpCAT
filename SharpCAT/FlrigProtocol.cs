@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SharpCATLib
+namespace SharpCAT
 {
     class FlrigProtocol
     {

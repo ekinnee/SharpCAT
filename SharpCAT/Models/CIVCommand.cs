@@ -1,4 +1,4 @@
-﻿namespace SharpCATLib.Models
+﻿namespace SharpCAT.Models
 {
     internal class CIVCommand
     {

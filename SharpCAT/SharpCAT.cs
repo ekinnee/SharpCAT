@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO.Ports;
 
-namespace SharpCATLib
+namespace SharpCAT
 {
     public class SharpCAT
     {

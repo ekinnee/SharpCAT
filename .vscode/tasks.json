@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/SharpCAT/SharpCATLib.csproj",
+                "${workspaceFolder}/SharpCAT/SharpCAT.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -23,7 +23,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/SharpCAT/SharpCATLib.csproj",
+                "${workspaceFolder}/SharpCAT/SharpCAT.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -37,7 +37,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/SharpCAT/SharpCATLib.csproj"
+                "${workspaceFolder}/SharpCAT/SharpCAT.csproj"
             ],
             "problemMatcher": "$msCompile"
         },
@@ -47,7 +47,7 @@
             "type": "process",
             "args": [
                 "clean",
-                "${workspaceFolder}/SharpCAT/SharpCATLib.csproj",
+                "${workspaceFolder}/SharpCAT/SharpCAT.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -59,7 +59,7 @@
             "type": "process",
             "args": [
                 "restore",
-                "${workspaceFolder}/SharpCAT/SharpCATLib.csproj"
+                "${workspaceFolder}/SharpCAT/SharpCAT.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

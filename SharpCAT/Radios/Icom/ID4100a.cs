@@ -1,6 +1,6 @@
-﻿using SharpCATLib.Models;
+﻿using SharpCAT.Models;
 
-namespace SharpCATLib.Radios.Icom
+namespace SharpCAT.Radios.Icom
 {
     internal class ID4100a : CIVRadio
     {

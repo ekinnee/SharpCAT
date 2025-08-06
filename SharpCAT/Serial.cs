@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO.Ports;
 
-namespace SharpCATLib
+namespace SharpCAT
 {
     public class Serial
     {

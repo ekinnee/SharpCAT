@@ -1,4 +1,4 @@
-﻿namespace SharpCATLib
+﻿namespace SharpCAT
 {
     internal class Socket
     {
