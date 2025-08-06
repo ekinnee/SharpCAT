@@ -1,5 +1,5 @@
 ﻿using System;
-namespace SharpCATLib.Models
+namespace SharpCAT.Models
 {
     partial interface IRadio
     {

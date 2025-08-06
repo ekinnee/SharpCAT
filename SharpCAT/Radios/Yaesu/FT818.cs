@@ -1,6 +1,6 @@
-using SharpCATLib.Models;
+using SharpCAT.Models;
 
-namespace SharpCATLib.Radios.Yaesu
+namespace SharpCAT.Radios.Yaesu
 {
     public class FT818 : CATRadio
     {

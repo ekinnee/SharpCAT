@@ -1,4 +1,4 @@
-﻿namespace SharpCATLib.Models
+﻿namespace SharpCAT.Models
 {
     //Base Radio Model
     public partial class CATRadio : IRadio
