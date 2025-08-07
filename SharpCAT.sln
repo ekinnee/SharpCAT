@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{43CFF6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{22E4F655-252E-42DB-ADD5-494BC825A97C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpCAT.Client", "Client\SharpCAT.Client.csproj", "{661C070A-612A-41CD-B9DC-9EF9FA05121A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{22E4F655-252E-42DB-ADD5-494BC825A97C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22E4F655-252E-42DB-ADD5-494BC825A97C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22E4F655-252E-42DB-ADD5-494BC825A97C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{661C070A-612A-41CD-B9DC-9EF9FA05121A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{661C070A-612A-41CD-B9DC-9EF9FA05121A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{661C070A-612A-41CD-B9DC-9EF9FA05121A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{661C070A-612A-41CD-B9DC-9EF9FA05121A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{22E4F655-252E-42DB-ADD5-494BC825A97C} = {43CFF66C-84E6-4EC2-AE4F-005FB80D74D5}
