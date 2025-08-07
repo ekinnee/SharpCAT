@@ -62,7 +62,7 @@ curl -X POST http://localhost:5188/api/cat/command \
 ## Project Structure
 
 ```
-SharpCAT/                # Core CAT library (cross-platform)
+Library/                # Core CAT library (cross-platform)
 Server/SharpCAT.Server/  # ASP.NET Core Web API server
 ```
 
@@ -79,7 +79,7 @@ dotnet build
 ### Build Just the Core Library
 
 ```bash
-dotnet build SharpCAT/SharpCAT.csproj
+dotnet build Library/Library.csproj
 ```
 
 ### VS Code Tasks
