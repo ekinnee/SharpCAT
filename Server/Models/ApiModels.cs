@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.IO.Ports;
 
-namespace SharpCAT.Server.Models
+namespace Server.Models
 {
     /// <summary>
     /// Response model for listing available serial ports

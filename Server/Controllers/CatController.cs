@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using SharpCAT.Server.Models;
-using SharpCAT.Server.Services;
+using Server.Models;
+using Server.Services;
 
-namespace SharpCAT.Server.Controllers
+namespace Server.Controllers
 {
     /// <summary>
     /// Controller for CAT (Computer Aided Transceiver) operations

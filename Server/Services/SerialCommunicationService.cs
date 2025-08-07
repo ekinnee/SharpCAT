@@ -1,7 +1,7 @@
 using System.IO.Ports;
 using System.Text;
 
-namespace SharpCAT.Server.Services
+namespace Server.Services
 {
     /// <summary>
     /// Service for managing serial communication with radios using SharpCAT library
@@ -9,7 +9,7 @@ namespace SharpCAT.Server.Services
     public class SerialCommunicationService : ISerialCommunicationService, IDisposable
     {
         private readonly ILogger<SerialCommunicationService> _logger;
-        private Serial? _serialConnection;
+        private SharpCAT.Serial? _serialConnection;
         private SerialPort? _directSerialPort;
         private string? _currentPortName;
         private readonly SemaphoreSlim _semaphore = new(1, 1);
@@ -25,7 +25,7 @@ namespace SharpCAT.Server.Services
         {
             try
             {
-                var sharpCat = new SharpCAT();
+                var sharpCat = new SharpCAT.SharpCAT();
                 var ports = sharpCat.PortNames;
                 _logger.LogInformation("Found {PortCount} available serial ports", ports?.Length ?? 0);
                 return ports ?? Array.Empty<string>();

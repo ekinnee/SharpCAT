@@ -1,6 +1,6 @@
 using System.IO.Ports;
 
-namespace SharpCAT.Server.Services
+namespace Server.Services
 {
     /// <summary>
     /// Interface for serial communication services
